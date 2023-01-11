@@ -94,15 +94,16 @@ function setup() {
   console.log(`target number: ${targetNumber}`);
 
   // Reset number of attempts
-  let maxNumberOfAttempts = 0;
+  attempts = 0;
 
   // Enable the input and submit button
-  submitButton.disabeld = false;
+  submitButton.disabled = false;
   guessInput.disabled = false;
 
   hideAllMessages();
   resetButton.style.display = 'none';
 
+  numberOfGuessesMessage.innerHTML = '';
   tooHighMessage.innerHTML = '';
   tooLowMessage.innerHTML = '';
   correctMessage.innerHTML = '';
